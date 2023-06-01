@@ -36,6 +36,7 @@ ul,li{
     --border-menu-btn: #E7E9FC;
     --hover-footer-link: #31D0AA;
     --customer-color: #8E8F99;
+    --modal-color:#FCFCFC;
    
   }
 
@@ -269,6 +270,7 @@ body{
     right: 0;
     bottom: 0;
     background: rgba(46, 47, 66, 0.4);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .is-hidden{
@@ -279,8 +281,8 @@ body{
 
 .modal{
     width: 408px;
-    height: 584px;
-    background-color: var(--second-main-color);
+    min-height: 584px;
+    background-color: var(--modal-color);
     box-sizing: border-box;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -290,8 +292,11 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
 
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+
 }
 .close-btn {
+    padding: 0;
     width: 24px;
     height: 24px;
 
@@ -300,6 +305,8 @@ body{
     background: var(--border-menu-btn);
     border: 1px solid rgba(0, 0, 0, 0.1);
 
+    cursor: pointer;
+
     position: absolute;
     right: 24px;
     top: 24px;
@@ -307,7 +314,26 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
+
+.close-icon{
+    fill: var(--main-color-dark);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-btn:hover,
+.close-btn:focus{
+    background-color: var(--hover-color);
+    border: none;
+}
+.close-btn:hover .close-icon,
+.close-btn:focus .close-icon
+{
+    fill: var(--main-color);
+}
+
 
 
 
