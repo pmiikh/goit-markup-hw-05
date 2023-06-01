@@ -39,7 +39,17 @@
         <section class="main-page">
             <div class="container main-flex">
                 <h1 class="main-title">Effective Solutions for Your Business</h1>
-                <button type="button" class="main-btn">Order Service</button>
+                <button type="button" class="main-btn" data-modal-open>Order Service</button>
+                <div class="backdrop is-hidden" data-modal>
+                    <div class="modal">
+                        <button class="close-btn" type="button" data-modal-close>
+                            <div class="close-icon-container">
+                                <svg class="close-icon">
+                                    <use href="./images/close-black.svg"></use>
+                                </svg>
+                            </div>
+                    </button></div>
+                    </div>
             </div>
         </section>
 
@@ -340,5 +350,6 @@
             </div>
         </div>    
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
