@@ -303,12 +303,13 @@ body{
     position: absolute;
     right: 24px;
     top: 24px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.close-icon-container{
-    width: 8px;
-    height: 8px;
-}
+
 
 /* -------------properities--------------------- */
 .prop-page{
