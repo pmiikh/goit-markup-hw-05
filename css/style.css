@@ -778,11 +778,16 @@ margin: -1px;
     justify-content: center;
     
     position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-card-item:hover .offer-hover-text, 
 .link-card-item:focus .offer-hover-text{
     transform: translateY(0);
+
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .link-card{
@@ -792,13 +797,13 @@ margin: -1px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
-
+/* 
 .link-card:hover,
 .link-card:focus{
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 2px 1px rgba(46, 47, 66, 0.08);
-}
+} */
                         
 .link-card-wrap{
     position: relative;
@@ -815,7 +820,7 @@ margin: -1px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     top:0;
-    padding: 40px 32px 0;
+    padding: 40px 32px;
     background-color: var(--logo-web-color);
 
     height: 100%;
@@ -829,14 +834,14 @@ margin: -1px;
     padding: 32px 16px;
     border: 1px solid var(--border-menu-btn);
     border-top: none;
-
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+/* 
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
-.offer-info:hover, 
+/* .offer-info:hover, 
 .offer-info:focus{
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
+} */
 
 .offer-heading{ 
     font-weight: 500;
